@@ -48,4 +48,4 @@ if ingredients_list:  # is not null
         session.sql(my_insert_stmt).collect()
         st.success(name_on_order_message, icon="✅")
 
-st.text(smoothiefroot_response,json())
+st.text(smoothiefroot_response.json())
